@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Love Calculator</h1>
+        <div class="heart">♥</div>
+
+        <form method="POST">
+            <div class="input-group">
+                <input type="text" name="fname" placeholder="Your Name" required>
+                <span>+</span>
+                <input type="text" name="sname" placeholder="Partner's Name" required>
+            </div>
+            <button type="submit">Calculate Love</button>
+        </form>
+
+        {% if percentage %}
+        <div class="result">
+            <h2>{{ fname }} & {{ sname }}</h2>
+            <div class="percentage">{{ percentage }}%</div>
+            <div class="love-bar"></div>{{ percentage }}%</div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>

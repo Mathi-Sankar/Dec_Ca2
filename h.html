@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Price Checker</title>
+</head>
+
+<body>
+    <h2>Enter Cryptocurrency and Currency</h2>
+    <form action="/get_price" method="post">
+        <label for="crypto">Select Cryptocurrency:</label>
+        <select id="crypto" name="crypto" required>
+            <option value="bitcoin">Bitcoin</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="dogecoin">Dogecoin</option>
+            <option value="cardano">Cardano</option>
+            <option value="ripple">Ripple</option>
+        </select>
+        <br><br>
+        <label for="currency">Select Currency:</label>
+        <select id="currency" name="currency" required>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="inr">INR</option>
+            <option value="gbp">GBP</option>
+            <option value="jpy">JPY</option>
+        </select>
+        <br><br>
+        <button type="submit">Check Price</button>
+    </form>
+</body>
+
+</html>
