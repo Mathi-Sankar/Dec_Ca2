@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe6e6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+    color: #e60073;
+}
+
+/* Heart Symbol */
+.heart {
+    font-size: 50px;
+    color: red;
+    margin: 10px 0;
+}
+
+/* Input Fields */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #e60073;
+    border-radius: 5px;
+    text-align: center;
+}
+
+span {
+    font-size: 20px;
+    color: #e60073;
+}
+
+/* Button */
+button {
+    background: #e60073;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #cc0052;
+}
+
+/* Result Section */
+.result {
+    margin-top: 20px;
+}
+
+.percentage {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e60073;
+}
+
+.love-bar {
+    height: 10px;
+    background: #e60073;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: width 0.5s ease-in-out;
+}
